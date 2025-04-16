@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  border: 15px solid red;
+  border-image: linear-gradient(to left bottom, blue, red);
+  border-image-slice: 15;
+  padding: 10px;
+}
+
+.content__list-item {
+  font-size: 24px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fcf4f4;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.btn:hover {
+  background-color: #fd6262;
+}
+
+.hidden {
+  display: none;
+}
