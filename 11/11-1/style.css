@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  border-radius: 10px;
+  margin-left: 200px;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+.btn {
+  margin-top: 5px;
+  width: 30%;
+}

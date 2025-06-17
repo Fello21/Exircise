@@ -1,47 +1,17 @@
 const conteiner = document.querySelector(".conteiner");
-const img1 = document.querySelector(".carousel__1");
-const img2 = document.querySelector(".carousel__2");
-const img3 = document.querySelector(".carousel__3");
+const imgs = document.querySelectorAll("img");
+
+console.log(imgs);
 
 
 conteiner.removeChild(conteiner.firstChild);
 
-
-img1.addEventListener("click", function () {
-  if (conteiner.children.length != 0) {
-    conteiner.removeChild(conteiner.firstChild);
-    const img = document.createElement("img");
-    img.src = img1.src;
-    conteiner.append(img);
-  } else {
-    const img = document.createElement("img");
-    img.src = img1.src;
-    conteiner.append(img);
+imgs.forEach(img => {   
+    img.addEventListener("click", function () {
+      conteiner.innerHTML = '';
+      const newImg = document.createElement("img");
+      newImg.src = img.src;
+      conteiner.append(newImg);
+    })
   }
-});
-
-img2.addEventListener("click", function () {
-  if (conteiner.children.length != 0) {
-    conteiner.removeChild(conteiner.firstChild);
-    const img = document.createElement("img");
-    img.src = img2.src;
-    conteiner.append(img);
-  } else {
-    const img = document.createElement("img");
-    img.src = img2.src;
-    conteiner.append(img);
-  }
-});
-
-img3.addEventListener("click", function () {
-  if (conteiner.children.length != 0) {
-    conteiner.removeChild(conteiner.firstChild);
-    const img = document.createElement("img");
-    img.src = img3.src;
-    conteiner.append(img);
-  } else {
-    const img = document.createElement("img");
-    img.src = img3.src;
-    conteiner.append(img);
-  }
-});
+)

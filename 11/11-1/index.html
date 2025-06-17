@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Форма опроса</h1>
+    <form class="form" name='blank'>
+      <div class="form__name">
+        <label for="name">Имя пользователя:</label>
+        <input type="text" name="name" id="name" placeholder="ФИО">
+      </div>
+      <div class="form__email">
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" placeholder="mail@mai.ru">
+      </div>
+      <div class="form__sex">
+        <label for="male">Мужской</label>
+        <input type="radio" name="sex" id="name" value="Мужской">
+        <label for="female">Женский</label>
+        <input type="radio" name="sex" id="name" value="Женский">
+      </div>
+      <div class="form__assessment">
+        <label for="assessment">Оценка сервиса (0-10):</label>
+        <input type="range" name="assessment" id="assessment" min="0" max="10" value="5">
+        <span class="form__assessment-value">5</span>
+      </div>
+      <div class="form__hobby">
+        <label>Ваши интересы:</label>
+        <label>Спорт
+          <input type="checkbox" name="hobby" value="Спорт">
+        </label>
+        <label>Чтение
+          <input type="checkbox" name="hobby" value="Чтение">
+        </label>
+        <label>Фильмы
+          <input type="checkbox" name="hobby" value="Фильмы">
+        </label>
+        <label>Исскуство
+          <input type="checkbox" name="hobby" value="Исскуство">
+        </label>
+      </div>
+      <div class="form__comment">
+        <label for="comment">Комментарий:</label>
+        <input type="text" name="comment" id="comment">
+      </div>
+    </form>
+    <button class="btn">Отправить</button>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

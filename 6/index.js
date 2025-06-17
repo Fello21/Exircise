@@ -8,38 +8,4 @@ const inputNumber = document.querySelector(".input-number");
 
 let numbersArray = [];
 
-addNumber.addEventListener("click", () => {
-  if (inputNumber.value === "") {
-    alert("Вы не ввели число");
-    return;
-  } else {
-    numbers.textContent += `${inputNumber.value} `;
-    numbersArray.push(Number(inputNumber.value));
-
-    inputNumber.value = "";
-  }
-});
-
-findMin.addEventListener("click", () => {
-  let min = numbersArray[0];
-
-  for (let num of numbersArray) {
-    if (num < min) {
-      min = num;
-    }
-  }
-
-  minNumber.textContent = `Минимальное число: ${min}`
-});
-
-findMax.addEventListener("click", () => {
-  let max = numbersArray[0];
-
-  for (let num of numbersArray) {
-    if (num > max) {
-      max = num;
-    }
-  }
-
-  maxNumber.textContent = `Максимальное число: ${max}`
-});
+addNumber.addEventListener("click", () => {})
