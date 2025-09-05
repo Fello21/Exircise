@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.homepage {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 50px 0 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+}
+
+.addpage {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 10px;
+  align-items: top;
+  background-color: aliceblue;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.container__form-input {
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 15px;
+}
+
+.container__buttonAdd {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(16, 116, 74);
+  color: white;
+  align-self: center;
+}
+
+.container__form-editbutton {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(16, 116, 74);
+  color: white;
+  align-self: center;
+}
+
+.container__buttonAdd:hover {
+  background-color: rgb(18, 87, 37);
+}
+
+.container__buttonAdd:active {
+  background-color: rgb(96, 168, 117);
+}
+
+.container__table {
+  margin-top: 20px;
+  border: 2px, solid, black;
+  border-spacing: 0px;
+  width: 1400px;
+}
+
+.container__table-head {
+  background-color: rgb(26, 18, 18);
+  color: white;
+}
+
+.container__table-headtitle {
+  text-align: start;
+  padding-left: 20px;
+}
+
+td {
+  padding: 20px;
+  border-bottom: 1px gray solid;
+}
+
+td button {
+  background-color: rgb(160, 0, 0);
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+}

@@ -40,7 +40,7 @@ function handleErrorResponse(data) {
   const isNeedAuth = data.errors.some(
     (error) => error.location === "headers" && error.param === "email"
   );
-
+  
   if (isNeedAuth) {
     const err = new Error("Некорректный email");
     err.name = "AuthError";

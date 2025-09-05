@@ -22,4 +22,4 @@ async function checkConnection() {
   }
 }
 
-setInterval(checkConnection, 1000);
+setInterval(checkConnection, 5000);
