@@ -180,7 +180,12 @@ function getSearchEl () {
   searchEl.setAttribute('placeholder','Поиск по складу');
   searchEl.addEventListener('keyup', search)
   container.append(searchEl);
+}
 
+function getLoaderEl() {
+  const loaderEl = document.createElement('div');
+  loaderEl.classList.add('lds-dual-ring');
+  return loaderEl;
 }
 
 export {
@@ -196,4 +201,5 @@ export {
   getBodyTableEl,
   getSaveEditButtonEl,
   getSearchEl,
+  getLoaderEl,
 };
